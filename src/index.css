@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:ital,wght@0,500;1,200&family=Open+Sans&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Playpen+Sans:wght@700&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:ital,wght@0,400;0,600;0,700;1,800&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;500;700&family=Rubik:ital@1&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  /* ### Primary */
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  /* ### Neutral */
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+
+body {
+  min-width: 100vw;
+  min-height:  100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+}
+
+.card {
+  margin: 1rem;
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Soft-red);
+  border-radius: 0.5rem;
+  color: var(--Very-pale-orange);
+  padding: 1rem;
+  margin-bottom : 1rem;
+}
+
+.heading p {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.heading h5 {
+  font-size: 1.3rem;
+}
+
+.information {
+  background-color: var(--Very-pale-orange);
+  max-width:350px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
+}
+
+.bar {
+  height: 180px !important;
+}
+ 
+.barchart:hover {
+  cursor: pointer;
+}
+
+.footer {
+  border-top: 2px solid var(--Cream);
+  margin-top:  1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 0rem ;
+}
+
+.left-text  p {
+  color:  var(--Medium-brown);
+  font-size: 0.9rem;
+  padding-bottom: 0.3rem;
+}
+
+.footer h5 {
+  font-size: 1.7rem;
+}
+
+.right-text {
+  text-align: right;
+}
+
+span {
+  font-weight: 700;
+  color: black;
+}
+
+.right-text p {
+  color:  var(--Medium-brown);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  .card{
+    width: 500px;
+    padding:  0.5rem;
+  }
+
+  .information{
+    min-width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .bar {
+    min-width: 100%;
+    height: 200px !important;
+  }
+}
